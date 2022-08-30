@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial;
+    margin: 0;
+      
+  }
+  
+  /* Header/logo Title */
+  header {
+    display: flex;
+    font-family: 'Macondo', cursive;
+    text-align: center;
+    background: #531e1e;
+    color: white;
+    flex-direction: column-reverse;
+  }
+  
+  /* Column container */
+  #S1 {  
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(img/book-old-vintage-paper-texture-parchment.jpg);
+    background-size: cover;   
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  aside {
+    
+    flex: 5%;
+    background-color: rgba(214, 192, 133, 0.822);
+    padding: 20px;
+    border: black;
+    border-style: double;
+  }
+  
+  /* Main column */
+  main {
+    background-color: rgb(26, 167, 49);
+    flex: 75%;  
+    padding: 200px;
+    flex-wrap: wrap;
+    text-align: center;    
+  }
+  
+.grid-container {
+    display: grid;
+}
+
+  /* Footer */
+  footer {
+    padding: 10px;
+    /*text-align: center;*/
+    background: rgb(108, 108, 109);
+    display: flex;
+  }
+  .rights {
+    flex: 1;
+    text-align: left;
+  }
+  .social {
+    flex: 1;
+    text-align: right;
+  }
+
+  .social #mail {
+      color: black;
+      font-size: small;
+  }
+  
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media only screen and (max-width: 992px) {
+    navbar {   
+        width: 100%; 
+      }
+    body {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+    aside {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    Main {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+    iframe {
+            width: 100%;
+            flex-wrap: wrap;
+      }
+   #S3 {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    form {
+      width: auto;
+    }
+  }
+
+  
+  @media only screen and (max-width: 768px) {
+    navbar {   
+        flex-direction:column;
+        width: 100%; 
+      }
+    body {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+    aside {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    Main {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+  }
+  @media only screen and (max-width: 300px) {
+    navbar {   
+        flex-direction:column;
+        width: 100%; 
+      }
+      
+    body {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+    aside {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    Main {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+  }
+    
+
